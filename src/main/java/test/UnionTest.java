@@ -17,7 +17,7 @@ public class UnionTest {
 		Set<Integer> s1 = new Set<Integer>();
 		Set<Integer> s2 = new Set<Integer>();
 		Union<Integer> union = new Union<Integer>();
-		Set unionResult;
+		Set<Integer> unionResult;
 		Set<Integer> desiredResult = new Set<Integer>();
 		
 		s1.addElement(1);
@@ -36,9 +36,7 @@ public class UnionTest {
 		unionResult=union.unionSet(s1, s2);
 		
 		List<Integer> list = unionResult.getList();
-		for (Integer iterable_element : list) {
-			System.out.println(iterable_element);
-		}
+
 		assertTrue(unionResult.compareIfIdentical(desiredResult));
 		
 		

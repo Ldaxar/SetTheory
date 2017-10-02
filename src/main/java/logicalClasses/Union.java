@@ -1,7 +1,5 @@
 package logicalClasses;
 
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 import main.Set;
@@ -30,14 +28,6 @@ public class Union <T>
 		for (int i=0;i<list2.size();i++) 
 			if (!list1.contains(list2.get(i))) list1.add(list2.get(i));
 		return new Set<T>(list1);
-	}
-	
-	
-	
-	
-	
-	
-	
-	
+	}	
 	
 }
