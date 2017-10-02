@@ -38,7 +38,7 @@ public class IntersectionTest {
 		for (Integer iterable_element : list) {
 			//System.out.println(iterable_element);
 		}
-		assertTrue(intersectionResult.compareIfIdentical(desiredResult));
+		assertTrue(intersectionResult.isEquall(desiredResult));
 		
 	}
 

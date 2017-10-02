@@ -26,7 +26,7 @@ public class Set <T> implements SetComperable<T>
 		return list;
 	}
 	
-	public boolean compareIfIdentical(Set<T> compareable)
+	public boolean isEquall(Set<T> compareable)
 	{
 		List<T> list2=compareable.getList();
 		if (list.size()!=list2.size()) return false;

@@ -41,7 +41,7 @@ public class DifferenceTest {
 		for (Integer iterable_element : list) {
 			System.out.println(iterable_element);
 		}
-		assertTrue(differenceResult.compareIfIdentical(desiredResult));
+		assertTrue(differenceResult.isEquall(desiredResult));
 		
 	}
 

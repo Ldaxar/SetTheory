@@ -37,7 +37,7 @@ public class UnionTest {
 		
 		List<Integer> list = unionResult.getList();
 
-		assertTrue(unionResult.compareIfIdentical(desiredResult));
+		assertTrue(unionResult.isEquall(desiredResult));
 		
 		
 		
@@ -55,7 +55,7 @@ public class UnionTest {
 		desiredResult.addElement(4);
 		
 		
-		assertTrue(desiredResult.compareIfIdentical(desiredResult));
+		assertTrue(desiredResult.isEquall(desiredResult));
 	}
 
 }
