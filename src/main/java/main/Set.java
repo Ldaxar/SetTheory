@@ -26,16 +26,16 @@ public class Set <T> implements SetComperable<T>
 		return list;
 	}
 	
-	public boolean isEquall(Set<T> compareable)
+	public int isEqual(Set<T> compareable)
 	{
 		List<T> list2=compareable.getList();
-		if (list.size()!=list2.size()) return false;
+		if (list.size()!=list2.size()) return -2;
 		for (int i=0; i<list.size();i++)
 		{
 			
-			if (!list.contains(list2.get(i))) return false;
+			if (!list.contains(list2.get(i))) return -2;
 		}
-		return true;
+		return 0;
 		
 	}
 	

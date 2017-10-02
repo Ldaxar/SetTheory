@@ -1,18 +1,16 @@
 package test;
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.util.List;
 
-import org.junit.Test;
-
 import logicalClasses.Difference;
-import logicalClasses.Intersection;
 import main.Set;
 
 public class DifferenceTest {
 
-	@Test
+	@org.junit.Test
 	public void differenceTest() 
 	{
 		Set<Integer> s1 = new Set<Integer>();
@@ -41,7 +39,8 @@ public class DifferenceTest {
 		for (Integer iterable_element : list) {
 			System.out.println(iterable_element);
 		}
-		assertTrue(differenceResult.isEquall(desiredResult));
+		//assertTrue(differenceResult.isEqual(desiredResult));
+		assertEquals(differenceResult.isEqual(desiredResult),0);
 		
 	}
 

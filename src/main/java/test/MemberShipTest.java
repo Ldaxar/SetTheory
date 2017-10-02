@@ -32,15 +32,15 @@ public class MemberShipTest
 	@Test
 	public void isNotMember() 
 	{
-		assertFalse(membership.checkMembership(s1, s2));
+		//assertFalse(membership.checkMembership(s1, s2));
+		assertEquals(membership.checkMembership(s1, s2), -2);
 	}
 	
 	@Test
 	public void isMember() 
 	{
-		assertTrue(membership.checkMembership(s2, s1));
+		//assertTrue(membership.checkMembership(s2, s1));
+		assertEquals(membership.checkMembership(s2, s1), -1);
 	}
-	
-	
 
 }

@@ -1,13 +1,15 @@
 package test;
 
-import static org.junit.Assert.*;
 
 import java.util.List;
 
-import org.junit.Test;
 
 import logicalClasses.Union;
 import main.Set;
+import org.junit.Test;
+
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class UnionTest {
 
@@ -37,15 +39,15 @@ public class UnionTest {
 		
 		List<Integer> list = unionResult.getList();
 
-		assertTrue(unionResult.isEquall(desiredResult));
-		
+		//assertTrue(unionResult.isEqual(desiredResult),);
+		assertEquals(unionResult.isEqual(desiredResult),0);
 		
 		
 		
 	}
 	
 	@Test
-	public void compareIfIndentical()
+	public void equals()
 	{
 		Set<Integer> desiredResult = new Set<Integer>();
 		
@@ -55,7 +57,7 @@ public class UnionTest {
 		desiredResult.addElement(4);
 		
 		
-		assertTrue(desiredResult.isEquall(desiredResult));
+		assertEquals(desiredResult.isEqual(desiredResult),0);
 	}
 
 }
