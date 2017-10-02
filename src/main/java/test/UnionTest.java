@@ -6,8 +6,8 @@ import java.util.List;
 
 import org.junit.Test;
 
+import logicalClasses.Union;
 import main.Set;
-import main.Union;
 
 public class UnionTest {
 

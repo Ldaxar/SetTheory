@@ -5,9 +5,9 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
-import main.Membership;
+import logicalClasses.Membership;
+import logicalClasses.Union;
 import main.Set;
-import main.Union;
 
 public class MemberShipTest 
 {

@@ -1,6 +1,8 @@
-package main;
+package logicalClasses;
 
 import java.util.List;
+
+import main.Set;
 
 public class Membership <T>
 {

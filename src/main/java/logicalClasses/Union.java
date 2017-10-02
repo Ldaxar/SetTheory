@@ -1,8 +1,10 @@
-package main;
+package logicalClasses;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+
+import main.Set;
 
 public class Union <T>
 {	
@@ -22,7 +24,7 @@ public class Union <T>
 			List<T> temp;
 			temp=list1;
 			list1=list2;
-			list2=list1;
+			list2=temp;
 		}
 		
 		for (int i=0;i<list2.size();i++) 
