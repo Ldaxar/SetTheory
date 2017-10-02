@@ -5,9 +5,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class Union <T>
-{
-	private Set<T> unionSet;
-	
+{	
 	public Set<T> unionSet(Set<T> s1, Set<T> s2)
 	{
 		List<T> list1=s1.getList();
